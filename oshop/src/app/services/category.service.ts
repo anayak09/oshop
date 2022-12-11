@@ -10,7 +10,7 @@ export class CategoryService {
 
   constructor(private db: AngularFireDatabase) { }
 
-  getCategories() {
+  getAll() {
     this.aflCategories = this.db.list('/categories', category => category.orderByChild('name'));
      return this.aflCategories
      .snapshotChanges()

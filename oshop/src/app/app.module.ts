@@ -28,7 +28,9 @@ import { ProductFormComponent } from './admin/product-form/product-form.componen
 import { CategoryService } from './services/category.service';
 import { FormsModule } from '@angular/forms';
 import { ProductService } from './services/product.service';
-import { DataTableModule } from 'angular-data-table';
+import {DataTablesModule} from 'angular-datatables';
+import { ProductFilterComponent } from './products/product-filter/product-filter.component';
+import { ProductCardComponent } from './product-card/product-card.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { DataTableModule } from 'angular-data-table';
     AdminProductsComponent,
     AdminOrdersComponent,
     LoginComponent,
-    ProductFormComponent
+    ProductFormComponent,
+    ProductFilterComponent,
+    ProductCardComponent
   ],
   imports: [
     FormsModule,
@@ -54,7 +58,8 @@ import { DataTableModule } from 'angular-data-table';
     AngularFireAuthModule,
     AngularFireStorageModule,
     AngularFirestoreModule,
-    AngularFireDatabaseModule
+    AngularFireDatabaseModule,
+    DataTablesModule
   ],
   providers: [
     AuthService,
