@@ -24,7 +24,7 @@
             <a ngbDropdownToggle class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                 {{ appUser.name }}
             </a>
-            <ul ngbDropdownMenu class="dropdown-menu">
+            <ul ngbDropdownMenu class="dropdown-menu" style="z-index: 1030;">
               <li><a class="dropdown-item" routerLink="/my/orders">My Orders</a></li>
               <ng-container *ngIf="appUser.isAdmin">
                 <li><a class="dropdown-item" routerLink="/admin/orders">Manage Orders</a></li>
