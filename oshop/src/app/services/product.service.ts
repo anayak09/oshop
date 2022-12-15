@@ -31,7 +31,6 @@ export class ProductService {
   }
 
   delete(productId: string) {
-    console.log('removed');
     return (this.db.list('/products')).remove(productId);
   }
 }

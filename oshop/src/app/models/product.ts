@@ -2,6 +2,6 @@ export interface Product {
     key: string;
     title: string;
     price: number;
-    category: string;
+    category?: string;
     imageUrl: string;
 }
